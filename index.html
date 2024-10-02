@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSMCS1N2Q8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NSMCS1N2Q8');
+    </script>
+    <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '304406458795254');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=304406458795254&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spike Shoezo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/preloader.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <meta name="description"
+        content="Discover unparalleled style and unmatched comfort with Spike Shoes. Explore our curated collection of fashionable and high-quality footwear.">
+    <meta name="keywords" content="Spike Shoes, footwear, fashion, comfort, shoe brands">
+    <link rel="canonical" href="https://spikeshoezo.in/home">
+    <meta property="og:title" content="Spike Shoezo">
+    <meta property="og:description"
+        content="Discover unparalleled style and unmatched comfort with Spike Shoes. Explore our curated collection of fashionable and high-quality footwear.">
+    <meta property="og:image" content="./images/spikefinal-.png">
+    <meta property="og:url" content="https://www.spikeshoezo.in">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- preoloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".preloader");
+            loader.classList.add("loader-hidden");
+
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild("preloader");
+
+            })
+        })
+    </script>
+    <!-- preoloader closed-->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./images/spikefinal-.png" alt="spike_logo" class="logo-navbar"
+                    id="logo-navbar"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center"
+                    style="width: 100%;justify-content: space-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="https://spikeshoezo.in">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page"  data-target="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page"  data-target="products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page"  data-target="testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page"  data-target="contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const targetId = link.getAttribute('data-target');
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <!-- navbar -->
+    <!-- hero open -->
+    <div class="row" style="padding: 0px;margin: 0px;height: 100vh;" id="home">
+        <div class="col-12 col-md-5 col-lg-5 hero-col-1 ">
+            <h1 style="font-weight: bolder;">The Journey <br>begins with the <br>perfect pair
+            </h1>
+            <p>
+                Discover unparalleled style and unmatched comfort with Spike. Our meticulously crafted shoes
+                redefine fashion, ensuring every step you take is a statement. Elevate your footwear game
+            </p>
+            <button class="button" type="button" data-text="Learn More"
+                onclick="document.getElementById('about').scrollIntoView()">
+                <span class="actual-text">&nbsp;Learn&nbsp;More&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Learn&nbsp;More&nbsp;</span>
+            </button>
+        </div>
+        <div class="col-12 col-md-7 col-lg-7 hero-col-2 order-1 ">
+            <div class="hero-round-red">
+                <img src="./images/image 13 (1).png" id="heroImg" alt="product image" class="hero-img hero-img-active ">
+                <div class="item-brand-div">
+                    <img class="item-brand" id="itemBrand" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero close -->
+    <!-- brand section -->
+    <div class="container text-center brand-section">
+        <h3>Top Brands</h3>
+        <p>Find your Dream Shoe Pair from 500+ Collections</p>
+        <div class="row">
+
+            <div class="col p-3"><img src="./images/adidas-black.png" alt="Brand Logo" class="brand-logo"></div>
+            <div class="col p-3"><img src="./images/nike-black.png" alt="Brand Logo" class="brand-logo"></div>
+            <div class="col p-3"><img src="./images/puma-black.png" alt="Brand Logo" class="brand-logo"></div>
+            <div class="col p-3"><img src="./images/pngegg (1) 1.png" alt="Brand Logo" class="brand-logo"></div>
+            <div class="col p-3"><img
+                    src="./images/kisspng-converse-chuck-taylor-all-stars-brand-logo-shoe-5b6fc8aaa41ff5 2.png"
+                    alt="Brand Logo" class="brand-logo"></div>
+            <div class="col p-3"><img src="./images/image 7.png" alt="Brand Logo" class="brand-logo"></div>
+
+        </div>
+    </div>
+    <!-- brand section close-->
+    <!-- about -->
+    <div class="row" id="about" style="width: 100%;margin: 0px;">
+        <div class="col-12 col-md-6 col-lg-6 about-col-1">
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 about-col-2">
+            <div class="row about-sub-1" style="padding: 10%;height: auto;">
+                <h1 style="font-weight: bold;">Spike: Stride in Style Comfortably.</h1>
+                <p>At Spike, we're more than just a shoe reselling brand; we're curators of style and quality. With a
+                    passion for footwear, we handpick each pair, ensuring every step you take is a stride in
+                    fashion-forward confidence. We have splendid collections of Casual and Formal Footwears</p>
+                <a href="https://api.whatsapp.com/send?phone=+918921839864" class="shopnowbutton"> Shop Now
+                </a>
+            </div>
+            <div class="row about-sub-2">
+                <div class="col-12 col-md-6 col-lg-6"
+                    style="background-image: url('../images/Rectangle\ 4703.png');background-size: cover;"></div>
+                <div class="col-12 col-md-6 col-lg-6"
+                    style="background-image: url('../images/Rectangle\ 4704.png');background-size: cover;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- about close -->
+    <!-- we offer -->
+    <div class="container p-5 weoffer">
+        <div class="row pt-5">
+            <div class="col-12 col-md-7 col-lg-7 pt-5">
+                <h4>at Spike Shoezo</h4>
+                <h1 style="font-weight: bold;">We Offer</h1>
+
+                <div class="row p-2">
+                    <div class="col-1 round-col">1</div>
+                    <div class="col">
+                        <h4>Top Notch Quality</h4>
+                        <p>At Spike we take pride in offering the finest footwear crafted with precision and dedication.
+                            Step into unmatched comfort, durability, and style</p>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-1 round-col">2</div>
+                    <div class="col">
+                        <h4>Comfort and Support</h4>
+                        <p>Spike shoes redefine comfort with precision. Our designs seamlessly blend style and support,
+                            ensuring every step is a delight. Elevate your comfort with Spike.</p>
+                    </div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-1 round-col">3</div>
+                    <div class="col">
+                        <h4>Style and Versatility</h4>
+                        <p>With trend-conscious designs, vibrant colors, and timeless patterns, Spike offers a diverse
+                            range that complements every taste. Elevate your style with the perfect pairs!!.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-5 hide"
+                style="background-image: url('./images/Group\ 1000001333.png');height: 80vh;background-size: cover;">
+            </div>
+        </div>
+    </div>
+    <!-- we offer close -->
+    <!-- products  -->
+    <style>
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-img-top {
+            height: 18rem;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    </style>
+    <div id="products" class="container pt-5 pb-5">
+        <h1 class="text-center">Our Products</h1>
+        <div class="row gap-5 justify-content-center pt-5 pb-5 p-3">
+
+            <div class="card p-1 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                <img src="./products/IMG-20240103-WA0004.jpg" class="card-img-top" alt="Product Item">
+                <div class="card-body">
+                    <h5 class="card-title">NB 650</h5>
+                    <p class="card-text">The highly sought-after New Balance 650 sneakers draw inspiration from 1980s retro designs. The shoe comes constructed with a supple leather upper.</p>
+                </div>
+            </div>
+            <div class="card p-1 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                <img src="./products/IMG-20240103-WA0005.jpg" class="card-img-top" alt="Product Item">
+                <div class="card-body">
+                    <h5 class="card-title">Jordan Tatum</h5>
+                    <p class="card-text">Its lightweight, textile upper presumably emphasizes breathability while the midfoot features overlays that stretch across the upper and midsole.</p>
+                </div>
+            </div>
+            <div class="card p-1 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                <img src="./products/IMG-20240103-WA0006.jpg" class="card-img-top" alt="Product Item">
+                <div class="card-body">
+                    <h5 class="card-title">Converse Dior blk</h5>
+                    <p class="card-text">The B23 high-top sneaker is set apart by its layering of transparent paneling and white and black Dior Oblique canvas.</p>
+                </div>
+            </div>
+            <div class="card p-1 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                <img src="./products/IMG-20240103-WA0007.jpg" class="card-img-top" alt="Product Item">
+                <div class="card-body">
+                    <h5 class="card-title">NB 9060</h5>
+                    <p class="card-text">The 9060 is a new expression of the refined style and innovation-led design
+                        that have made the 99X series home to some of the most iconic models in New Balance </p>
+                </div>
+            </div>
+            <div class="card p-1 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                <img src="./products/adimatic.jpg" class="card-img-top" alt="Product Item">
+                <div class="card-body">
+                    <h5 class="card-title">Adidas Adimatic</h5>
+                    <p class="card-text">Based on a classic early 2000s skate edition, these adidas Adimatic shoes stay
+                        true to their core DNA, but a suede upper and full gum tooling give them a modern refresh. </p>
+                </div>
+            </div>
+            <div class="card p-1 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                <img src="./products/pumabmw.jpg" class="card-img-top" alt="Product Item">
+                <div class="card-body">
+                    <h5 class="card-title">Puma BMW</h5>
+                    <p class="card-text">Sporting an eco-friendly recycled upper, these kicks showcase striking
+                        colorblocking and powerful BMW M Motorsport branding.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- products close -->
+    <!-- testimonials  -->
+    <style>
+        .testimonial-profile {
+            width: 6rem;
+            height: 6rem;
+            background-image: url('./images/adidas-black.png');
+            border-radius: 50px;
+        }
+    </style>
+    <div id="testimonials"
+        style="background-image: url('./images/Rectangle\ 4712.png');width: 100%;background-size: cover;">
+        <div style="background-color: rgb(0, 0, 0,0.5);height: 100%;width:100%;color: white;">
+            <div class="container pt-5 pb-5">
+                <h1 class="text-center">
+                    Client Reviews
+                </h1>
+                <div class="row gap-5 justify-content-center pt-5 pb-5 p-3">
+                    <div class="card p-3 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                        <img src="./testimonials/yasser.jpg" class="testimonial-profile card-img-top"
+                            alt="testimonial image">
+                        <div class="card-body">
+                            <h5 class="card-title ">Mr. Yasser</h5>
+                            <p class="card-text">What a gem! Spike Shoezo has become my favorite place to buy shoes.
+                                The curated collection ensures that every pair is not only on-trend but also of high
+                                quality. I appreciate the attention to detail in the store, and the shopping experience
+                                is always enjoyable.</p>
+                        </div>
+                    </div>
+                    <div class="card p-3 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                        <img src="./testimonials/ankithaarjun.jpg" class="testimonial-profile card-img-top"
+                            alt="testimonial image">
+                        <div class="card-body">
+                            <h5 class="card-title ">Ms. Ankita Arjun</h5>
+                            <p class="card-text">I can't recommend Spike Shoezo enough! The variety of styles and
+                                brands is impressive, and the staff is always friendly and helpful. The shoes I've
+                                purchased have not only been stylish but also comfortable, making them my go-to choice
+                                for both fashion and comfort.</p>
+                        </div>
+                    </div>
+                    <div class="card p-3 col-12 col-sm-12 col-md-3 col-lg-3" style="border-radius: 20px;">
+                        <img src="./testimonials/unaizmohammed.jpg" class="testimonial-profile card-img-top"
+                            alt="testimonial image">
+                        <div class="card-body">
+                            <h5 class="card-title ">Mr. Unaiz Muhammed</h5>
+                            <p class="card-text">I absolutely love shopping at Spike Shoezo! The selection of shoes
+                                is incredible, and I always find the perfect pair for any occasion. The quality is
+                                top-notch, and the customer service is unmatched. I wouldn't shop anywhere else for my
+                                footwear needs!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonials close -->
+    <!-- contact  -->
+    <style>
+        .contact-link {
+            color: grey;
+            text-decoration: none;
+        }
+
+        .socialmedia-links {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <div id="contact" class="container pt-5 pb-5">
+        <div class="row p-2">
+            <div class="col-12 col-md-4 col-lg-4 p-2">
+                <div class="col p-3" style="border-radius: 30px;border: 1px solid grey;">
+                    <h1>Contact Us</h1>
+                    <div class="row p-3">
+                        <div class="col-1 round-col">1</div>
+                        <div class="col">
+                            <h5 class="card-title">Phone number</h5>
+                            <a href="tel:+918921839864" class="contact-link">+91 89218 39864</a>
+                        </div>
+                    </div>
+                    <div class="row p-3">
+                        <div class="col-1 round-col">2</div>
+                        <div class="col">
+                            <h5 class="card-title">Address</h5>
+                            <a href="https://maps.app.goo.gl/QE9ZomdKDhKrDQiA9" class="contact-link">Spike Shoezo, HMT
+                                Junction, Kalamassery</a>
+                        </div>
+                    </div>
+                    <div class="row p-3">
+                        <div class="col-1 round-col">3</div>
+                        <div class="col">
+                            <h5 class="card-title">Opening Hours</h5>
+                            <a href="" class="contact-link">24/7</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-8 p-2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5384199442287!2d76.32075457479439!3d10.05489479005328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d2af904d121%3A0x68ac495b976ed08f!2sSpike%20Shoezo!5e0!3m2!1sen!2sin!4v1704032692392!5m2!1sen!2sin"
+                    style="border-radius: 20px;width: 100%;height: 100%;" allowfullscreen="true" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- contact close -->
+    <!-- footer -->
+    <div class="bg-dark text-white p-5">
+        <div class="">
+            <div class="row p-5  gap-3">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-2">
+                            <img src="./images/spikefinal-.png" class="logo-navbar" alt="Spike Shoezo logo">
+                        </div>
+                        <div class="col pt-3">
+                            Elevate your step with SpikeShoeZo – where style meets comfort seamlessly. Our meticulously
+                            crafted shoes
+                            redefine fashion, ensuring each stride is a statement
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <h3>Visit Us</h3>
+                    <a style="color: white;text-decoration: none;" href="https://maps.app.goo.gl/QE9ZomdKDhKrDQiA9">
+                        Spike Shoezo ,
+                        HMT Junction ,
+                        Kalamassery
+                    </a>
+                </div>
+                <div class="col pt-4">
+                    <div class="row">
+                        <div class="col-3"><a class="socialmedia-links "
+                                href="https://www.facebook.com/profile.php?id=61554435067698"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg></a></div>
+                        <div class="col-3">
+                            <a class="socialmedia-links " href="https://api.whatsapp.com/send?phone=+918921839864"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg></a>
+                        </div>
+                        <div class="col-3"><a class="socialmedia-links " href="https://www.instagram.com/spike_shoezo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center" style="color: grey;">Marketed by : <a href="https://grand-mark.in/it" style="color: rgb(178, 178, 178);text-decoration: none;">Grand Mark</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+
+        const images = ['./images/image 182.png', './images/image 13 (1).png', './images/air.png']; // Add your image URLs
+        const brandsss = ['NIKE', 'ADIDAS', 'JORDAN']; // Add your item brands
+        const brands = ['./images/nike.png', './images/adidas.png', './images/jordan.png', './images/newbalance.png', './images/puma.png',];
+        let currentIndex = 0;
+
+        function changeContent() {
+            const heroImg = document.getElementById('heroImg');
+            const itemBrand = document.getElementById('itemBrand');
+
+            // Fade out
+            heroImg.style.opacity = 0;
+            itemBrand.style.opacity = 0;
+            // Change content after fade out
+            setTimeout(() => {
+                // Change image
+                heroImg.src = images[currentIndex];
+
+                // Change item brand
+                itemBrand.src = brands[currentIndex];
+
+                // Increment index
+                currentIndex = (currentIndex + 1) % images.length;
+
+                // Fade in
+                heroImg.style.opacity = 1;
+                itemBrand.style.opacity = 1;
+                heroImg.classList.toggle("anime-after-img");
+                setTimeout(() => {
+                    heroImg.classList.remove("anime-after-img");
+                }, 3000);
+            }, 1000); // Set the timeout duration to match the transition duration
+        }
+
+        // Initial content change
+        changeContent();
+
+        // Set interval to change content every 5 seconds
+        setInterval(changeContent, 4000);
+
+
+
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            var navbarlogo = document.getElementById('logo-navbar');
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > window.innerHeight / 4) {
+                navbar.classList.add('navbar-shadow');
+                navbarlogo.style.height = "3rem";
+
+
+            } else {
+                navbar.classList.remove('navbar-shadow');
+                navbarlogo.style.height = "5rem";
+
+            }
+        });
+
+    </script>
+</body>
+</html>

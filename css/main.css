@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat;
+    background-color: #ffffff;
+}
+
+.logo-navbar {
+    height: 5rem;
+    transition: 900ms;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: rgb(45, 45, 45);
+}
+
+.nav-link:hover {
+    scale: 1.2;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.card {
+    box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+
+}
+
+.hero-col-1 {
+    padding-top: 15%;
+    padding-left: 8%;
+}
+
+.hero-col-2 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-round-red {
+    background-color: #EC1C23;
+    height: 100%;
+    width: 50%;
+    border-radius: 50% 0px 0px 50%;
+    position: absolute;
+
+    right: 0px;
+}
+
+.hero-img {
+    opacity: 1;
+    transition: opacity 600ms ease-in-out;
+
+}
+
+.hero-img-active {
+    width: 30rem;
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    z-index: 3;
+    transform: translateX(-150px);
+    transition: 900ms;
+}
+
+.anime-after-img {
+    transform: translateX(0px);
+    transform: rotate(28.09deg);
+}
+
+.item-brand-div {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    z-index: 0;
+    padding: 10%;
+    text-align: center;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.item-brand {
+    text-align: center;
+    height: 30vh;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.navbar-shadow {
+    background-color: #ffffff;
+
+    transition: 900ms ease-in-out;
+}
+
+.brand-logo {
+    width: 5rem;
+}
+
+.brand-section {
+    padding: 10%;
+}
+
+.about-col-1 {
+    background-image: url('../images/Rectangle\ 4701.png');
+    height: 120vh;
+    background-size: cover;
+}
+
+.about-col-2 {
+    background-image: url('../images/Rectangle\ 4702.png');
+    height: 120vh;
+    background-size: cover;
+}
+
+.round-col {
+    text-align: center;
+    border-radius: 50px;
+    background-color: #EC1C23;
+    color: white;
+    height: 3rem;
+    width: 3rem;
+    padding: 0.7rem;
+}
+
+.about-sub-1 {
+    height: 60%;
+}
+
+.about-sub-2 {
+    height: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-navbar {
+        height: 3rem !important;
+
+    }
+
+    .navbar {
+        background-color: #ffffff !important;
+    }
+
+    .hero-round-red {
+        background-color: #ff0000;
+        height: 100%;
+        width: 100%;
+        border-radius: 0% 0px 0px 0%;
+        position: absolute;
+        right: 0px;
+    }
+
+    .hero-img-active {
+        width: 20rem;
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        z-index: 3;
+
+        transition: 900ms;
+    }
+
+    .item-brand {
+        text-align: center;
+        height: 20vh;
+        margin-right: 3rem;
+        overflow: hidden;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .brand-section {
+        margin-top: 150%;
+    }
+
+    .about-col-1 {
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .hero-col-1 {
+        padding-top: 45%;
+        padding-left: 8%;
+    }
+
+
+    .about-sub-2 {
+        height: 80%;
+
+    }
+
+    .weoffer {
+        margin-top: 70%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+}
+
+.navbar-toggler {
+    border: none;
+
+}
+
+#checkbox {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    transition-duration: .5s;
+}
+
+.bars {
+    width: 100%;
+    height: 3px;
+    background-color: #ff0000;
+    border-radius: 4px;
+}
+
+#bar2 {
+    transition-duration: .8s;
+    width: 50%;
+}
+
+#bar1,
+#bar3 {
+    width: 80%;
+}
+
+#checkbox:checked+.toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
